@@ -1,0 +1,131 @@
+// Menu button
+
+.menu-btn{
+  top: 35px;
+  z-index: 3;
+  right: 35px;
+  cursor: pointer;
+  @include easeOut;
+  position: absolute;
+
+  .btn-line{
+    width: 28px;
+    height: 3px;
+    @include easeOut;
+    margin: 0 0 5px 0;
+    background-color: set-text-color($primary-color);
+  }
+
+  &.close{
+    @include easeOut;
+    transform: rotate(180deg);
+
+    .btn-line{
+      &:nth-child(1){
+        transform: rotate(-45deg) translateY(6px);
+      }
+
+      &:nth-child(2){
+        display: none;
+      }
+
+      &:nth-child(3){
+        transform: rotate(45deg) translateY(-6px);
+      }
+    }
+  }
+}
+
+.menu{
+  width: 100vw;
+  opacity: 0.9;
+  position: fixed;
+  visibility: hidden;
+
+  &.show{
+    visibility: visible;
+  }
+
+  &-branding, &-nav{
+    width: 50%;
+    float: left;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    align-items: center;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  &-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include easeOut;
+    transform: translate3d(0, -100%, 0);
+    background-color: darken($primary-color, 5);
+    
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &-branding{
+    @include easeOut;
+    background-color: $primary-color;
+    transform: translate3d(0, 100%, 0);
+  
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait{
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid $secondary-color;
+
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .nav-item{
+    @include easeOut;
+    transform: translate3d(800px, 0, 0);
+  
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a{
+      color: $secondary-color;
+    }
+  }
+
+  .nav-link{
+    color: set-text-color($primary-color);
+    display: block;
+    @include easeOut;
+    padding: 1.2vw 0;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    // background-color: aqua;
+
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+}
+
+@for $x from 1 through 4 {
+  .nav-item:nth-child(#{$x}){
+    transition-delay: $x * 0.1s;
+  }
+}

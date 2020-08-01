@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dual--range--box{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: aqua;
+}
+
+.dual--range--line{
+    height: 7px;
+    background-color: grey;
+}
+
+.control--1, .control--2{
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.control--1{
+    float: left;
+    background-color: #ff55a5;
+}
+
+.control--2{
+    float: right;
+    background-color: #ff5860;
+}

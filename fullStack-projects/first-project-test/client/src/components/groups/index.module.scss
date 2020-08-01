@@ -1,0 +1,62 @@
+.cont{
+  padding: 1vw 10vw;
+  color: #432344;
+
+  .headBox{
+    display: grid;
+    font-weight: 600;
+    grid-template-columns: 3fr 3fr 2fr 4fr 1.5fr 1.5fr;
+
+    p{
+      font-size: 1.1em;
+      padding: 20px 0px;
+      text-align: center;
+      border-bottom: 5px solid #ccc;
+    }
+  }
+
+  .box{
+    display: grid;
+    font-weight: 300;
+    grid-template-columns: 3fr 3fr 2fr 4fr 1.5fr 1.5fr;
+
+    p{
+      padding: 20px 0px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      border-bottom: 3px solid #ccc;
+
+      button{
+        border: none;
+        outline: none;
+        font-size: 1em;
+        cursor: pointer;
+        font-weight: 600;
+        color: #432344;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #e7eefb;
+        border: 2px solid #432344;
+
+        &:hover{
+          background-color: #ccc;
+        }
+      }
+    }
+
+
+    .leftText{
+      padding-left: 10px;
+      align-items: flex-start;
+    }
+
+    .iconChat{
+      width: 1.5em;
+      height: 1.5em;
+      cursor: pointer;
+    }
+  }
+}

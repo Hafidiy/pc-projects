@@ -1,0 +1,18 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "Responsive Porfolio website",
+  "main": "index.js",
+  "homepage": "https://Hafidiy.github.io/project_portfolio",
+  "scripts": {
+    "scss": "node-sass -w scss/ -o dist/css --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Abdulloh Tolipov",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.13.0"
+  }
+}

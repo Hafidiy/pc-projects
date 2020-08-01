@@ -1,0 +1,32 @@
+.cont{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .select, .button{
+    border: none;
+    outline: none;
+    color: #1a3365;
+    margin-top: 7vw;
+    background-color: #ffbb00;
+    box-shadow: -2px 4px 45px 5px rgba(0,0,0,0.29);
+
+    &.select{
+      width: 60vw;
+      padding: 1.5vw;
+      cursor: pointer;
+      font-size: 1.2em;
+      border-radius: 10px;
+    }
+
+    &.button{
+      width: 12vw;
+      padding: 1vw;
+      cursor: pointer;
+      font-size: 1.4em;
+      border-radius: 10px;
+    }
+  }
+}

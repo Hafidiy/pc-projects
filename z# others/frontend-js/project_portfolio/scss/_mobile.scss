@@ -1,0 +1,293 @@
+// Widescreens
+@include mediaXL{
+  
+}
+
+// Desktop & Laptops
+@include mediaLg{
+  #home{
+    .lg-heading{
+      font-size: 4rem;
+    }
+  }
+
+  #about{
+    .lg-heading{
+      margin-top: 60px;
+    }
+  }
+
+  #work{
+    
+    .lg-heading{
+      font-size: 5rem;
+    }
+
+    .sm-heading{
+      font-size: 1.3rem;
+    }
+
+    .projects{
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  #contact{
+
+    .lg-heading{
+      font-size: 5rem;
+    }
+
+    .sm-heading{
+      font-size: 1.3rem;
+    }
+
+    .boxes{
+
+      div{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        padding: 1rem 1.8rem;
+
+        &:hover{
+          padding: 0.5rem 1.3rem;
+        }
+
+        span{
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
+
+// Tablets & Small Laptops
+@include mediaMd{
+  #home{
+    align-items: center;
+    text-align: center;
+
+    .lg-heading{
+      line-height: 1;
+      font-size: 3.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .sm-heading{
+      font-size: 1.3rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding{
+    float: none;
+    width: 100%;
+
+    &.menu-branding{
+      height: 30vh;
+      transform: translate3d(100%, 0, 0);
+
+      .portrait{
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    &.menu-nav{
+      height: 70vh;
+      transform: translate3d(-100%, 0, 0);
+    }
+
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  #about{
+
+    .lg-heading{
+      margin-top: 10vw;
+      font-size: 4em;
+    }
+
+    .sm-heading{
+      font-size: 1.4rem;
+    }
+
+    .about-info{
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+      grid-template-columns: 1fr;
+  
+      .bio-image{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  #work{
+
+    .lg-heading{
+      font-size: 4rem;
+    }
+
+    .sm-heading{
+      font-size: 1.1rem;
+    }
+
+    .projects{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  #contact{
+
+    .lg-heading{
+      font-size: 4rem;
+    }
+
+    .sm-heading{
+      font-size: 1.1rem;
+    }
+
+    .boxes{
+
+      div{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0.8rem 1.3rem;
+
+        &:hover{
+          padding: 0.4rem 0.9rem;
+        }
+
+        span{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// Smartphones
+@include mediaSm{
+  #home{
+    text-align: center;
+    align-items: center;
+
+    .lg-heading{
+      line-height: 1;
+      font-size: 2.2rem;
+    }
+
+    .sm-heading{
+      margin-top: 20px;
+      line-height: 1;
+      font-size: 1rem;
+    }
+  }
+
+  ul.menu-nav,
+  div.menu-branding{
+    float: none;
+    width: 100%;
+
+    &.menu-branding{
+      height: 30vh;
+      transform: translate3d(100%, 0, 0);
+
+      .portrait{
+        width: 110px;
+        height: 110px;
+      }
+    }
+
+    &.menu-nav{
+      height: 70vh;
+      transform: translate3d(-100%, 0, 0);
+
+      li > a{
+        font-size: 1rem;
+      }
+    }
+
+    &.show{
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  #about{
+
+    .lg-heading{
+      margin-top: 60px;
+      font-size: 2.4rem;
+    }
+
+    .sm-heading{
+      font-size: 0.99rem;
+    }
+
+    .about-info{
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+      grid-template-columns: 1fr;
+  
+      .bio-image{
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+
+  #work{
+
+    .lg-heading{
+      font-size: 2.5rem;
+    }
+
+    .sm-heading{
+      font-size: 0.99rem;
+    }
+
+    .projects{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #contact{
+
+    .lg-heading{
+      font-size: 2rem;
+    }
+
+    .sm-heading{
+      font-size: 0.7rem;
+    }
+
+    .boxes{
+
+      div{
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+        padding: 0.6rem 0.9rem;
+
+        &:hover{
+          padding: 0.3rem 0.6rem;
+        }
+
+        span{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

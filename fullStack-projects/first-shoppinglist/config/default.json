@@ -1,0 +1,4 @@
+{
+  "mongoURL": "mongodb+srv://halfayed:A989799a@cluster0-vy3aq.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "sL_myJwtSecret"
+}

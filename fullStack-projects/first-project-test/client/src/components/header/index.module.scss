@@ -1,0 +1,61 @@
+.cont{
+  height: 15vh;
+  color: #e7eefb;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  padding: 0px 3em;
+  justify-content: space-between;
+  background-color: #432344;
+  
+
+  .menuIcon{
+    width: 2em;
+    height: 2em;
+    color: #e7eefb;
+    cursor: pointer;
+  }
+
+  .right{
+    display: flex;
+    align-items: center;
+  
+    .avatar{
+      width: 3.5em;
+      height: 3.5em;
+      cursor: pointer;
+      margin-left: 4em;
+    }
+
+    .bellIcon{
+      width: 1.7em;
+      height: 1.7em;
+      color: #e7eefb;
+      cursor: pointer;
+      // margin-right: 4em;
+    }
+  }
+}
+
+.deadline{
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #432344;
+  border-bottom: 1px solid #432344;
+
+  &:hover{
+    background-color: #e7eefb;
+  }
+}
+
+.ptools{
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #432344;
+  font-family: sans-serif;
+
+  &:hover{
+    background-color: #e7eefb;
+  }
+}

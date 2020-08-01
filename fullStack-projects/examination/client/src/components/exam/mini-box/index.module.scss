@@ -1,0 +1,52 @@
+.cont{
+  color: #1a3365;
+  padding: 1vw 4vw 3vw 4vw;
+ 
+  .question{
+    font-size: 1.6em;
+    padding: 2vw 0px;
+    border-bottom: 5px solid #ffbb00;
+  }
+
+  .variants{
+    margin-top: 3vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .li{
+      cursor: pointer;
+      font-size: 1.4em;
+      margin-top: 1vw;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+
+      &:hover {
+        color: #1a3365;
+        background-color: #f1f1f1;
+      }
+
+      span{
+        padding: 1.6vw;
+        font-size: 1.4em;
+        color: #1a3365;
+        margin-right: 2vw;
+        display: inline-block;
+        background-color: #ffbb00;
+      }
+    }
+  }
+}
+
+.selectedVariant{
+  color: #1a3365;
+  background-color: #ffbb00;
+
+  &:hover{
+    color: #1a3365 !important;
+    background-color: #ffbb00 !important;
+  }
+}

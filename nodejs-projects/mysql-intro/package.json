@@ -1,0 +1,20 @@
+{
+  "name": "mysql-intro",
+  "version": "1.0.0",
+  "description": "Simple app for using mysql with node",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Hafidiy Al-Fayed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

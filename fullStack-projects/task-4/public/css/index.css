@@ -1,0 +1,174 @@
+.container{
+  font-family: sans-serif;
+  width: 95vw;
+  margin: 0 auto;
+}
+
+.searchBar{
+  padding-top: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.searchBar input{
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 1.6em;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.absoluteBox{
+  width: 80%;
+  height: 70vh;
+  padding: 0px 10vw;
+  position: absolute;
+  top: 15vh;
+  overflow: auto;
+  background-color: rgba(255, 255,255, 0.9);
+}
+
+.abcp{
+  cursor: pointer;
+  font-size: 1.5em;
+  margin-top: 25px;
+  padding: 5px 0px 5px 15px;
+  border-bottom: 3px solid #444;
+}
+
+.infoTable{
+  margin-top: 60px;
+}
+
+.inputName{
+  width: 100%;
+  display: flex;
+  /* background-color: pink; */
+  padding: 30px;
+  justify-content: center;
+}
+
+.inputName input{
+  border: none;
+  outline: none;
+  border: 1px solid #999;
+  width: 30vw;
+  height: 30%;
+  margin-right: 10px;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 1s ease-in-out;
+}
+
+.addPersonButton{
+  border: none;
+  outline: none;
+  font-size: 1.05em;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.5s ease-out;
+  color: #155c1e;
+  background-color: #62f073;
+  font-weight: 600;
+}
+
+table{
+  /* background-color: pink; */
+  width: 100%;
+}
+
+table td, th{
+  border: 1px solid  black;
+  text-align: center;
+  padding: 6px 10px;
+}
+
+.deletePersonButton{
+  border: none;
+  outline: none;
+  font-size: 1.05em;
+  padding: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline;
+  transition: all 0.5s ease-out;
+  color: #610606;
+  background-color: #f23d3d;
+  font-weight: 600;
+}
+
+.addPersonButton:active, .deletePersonButton:active{
+  transform: translateY(7px);
+}
+
+.changeButton{
+  border: none;
+  outline: none;
+  font-size: 0.9em;
+  padding: 4px 8px;
+  color: #0e2852;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #6298f0;
+  transition: all 0.5s ease-out;
+}
+
+.deleteButton{
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: all 0.5s ease-out;
+  color: #610606;
+  background-color: #f23d3d;
+}
+
+.addButton{
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.05em;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  transition: all 0.5s ease-out;
+  color: #155c1e;
+  background-color: #62f073;
+}
+
+.downloadButton{
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 4px 8px;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 0.5s ease-out;
+  color: #5e5e08;
+  background-color: #f7ff61;
+}
+
+.changeButton:active, .deleteButton:active, .addButton:active, .downloadButton:active{
+  transform: translateY(5px);
+}
+
+.dn{
+  display: none;
+}
